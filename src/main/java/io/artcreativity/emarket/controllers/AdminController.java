@@ -12,7 +12,8 @@ import io.artcreativity.emarket.entities.Product;
 import io.artcreativity.emarket.metier.AdminMetier;
 
 @RestController
-public class ProductController {
+@RequestMapping("admin")
+public class AdminController {
 
 	@Autowired
 	private AdminMetier adminMetier;

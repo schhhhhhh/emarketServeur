@@ -68,9 +68,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-//        config.addAllowedOrigin("http://localhost:4200");
-        config.addAllowedOrigin("https://console.ag4all.com");
-        config.addAllowedOrigin("https://agbuilder.ag4all.com");
+        config.addAllowedOrigin("http://localhost:4200");
 
 //        config.addAllowedOrigin("*");
         config.addAllowedHeader("*");
